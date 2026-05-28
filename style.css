@@ -383,3 +383,94 @@
       border-bottom: 2px solid #facc15;
       padding-bottom: 4px;
     }
+
+/* -------- NEW BEAUTIFUL FACULTIES CARDS SECTION (placed center of homepage) -------- */
+.faculties-section {
+  margin: 3rem 0 2rem;
+}
+.faculties-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.faculties-title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(125deg, #1e4a5f, #f5b042);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: -0.3px;
+}
+.faculties-title p {
+  color: #4b5563;
+  font-weight: 500;
+}
+.faculty-card-wrapper {
+  transition: all 0.25s ease;
+}
+.faculty-card {
+  background: white;
+  border-radius: 2rem;
+  padding: 1.8rem 1rem;
+  text-align: center;
+  box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.3s;
+  border: 1px solid rgba(245,176,66,0.2);
+  height: 100%;
+  cursor: default;
+}
+.faculty-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 40px -18px rgba(0,0,0,0.2);
+  border-color: #f5b042;
+  background: #ffffff;
+}
+.faculty-icon {
+  font-size: 3rem;
+  background: linear-gradient(145deg, #fef9e6, #fff2df);
+  width: 85px;
+  height: 85px;
+  line-height: 85px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  transition: 0.2s;
+}
+.faculty-card:hover .faculty-icon {
+  background: #f5b04220;
+  transform: scale(1.02);
+}
+.faculty-icon i {
+  color: #1e5a6f;
+  font-size: 2.7rem;
+}
+.faculty-name {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1e3c4c;
+}
+.faculty-desc {
+  font-size: 0.85rem;
+  color: #5b6e8c;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+.faculty-badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #1e5a6f;
+  border-radius: 40px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.9rem;
+  margin-top: 0.8rem;
+}
+/* responsive */
+@media (max-width: 768px) {
+  .faculty-name { font-size: 1.2rem; }
+  .faculty-icon { width: 70px; height: 70px; }
+  .faculty-icon i { font-size: 2.2rem; }
+}
